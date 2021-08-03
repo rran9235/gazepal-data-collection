@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<title>GazePal: Data Collection</title>
+	<h1>User Information</h1>
+	<body>
+		<form name="form" method='post'>
+			<label for='name'>Name:</label><br>
+			<input type='text' id='name'><br>
+			<label for='age'>Age:</label><br>
+			<input type='text' id='age'><br>
+			<label for='nationality'>Country of Origin:</label><br>
+			<input type='text' id='nationality'><br>
+			<br>
+			<label for='screen_size'>Screen Size (diagonal):</label><br>
+			<input type='text' id='screen_size'> inches<br>
+			<br>
+			<label for='res_width'>Screen Resolution:</label><br>
+			<input type='text' id='res_width'>x<input type='text' id='res_height'>px<br>
+			<br>
+			<label for='distance'>Distance from Screen:</label><br>
+			<input type='text' id='distance'> mm<br>
+			<br>
+			<label for='date'>Date:</label><br>
+			<input type='date' id='date'><br>
+			<br>
+			<label for='time_field'>Time (24 hr):</label><br>
+			<input type='text' id='time_field'>
+			<br>
+			<br>
+			<label for='submit_button' >Download form as text file: </label>
+			<input type='button' id="submit_button" value='Download' onclick="download()">
+		</form>
+		
+		<form method="POST" id="form-next-btn" action="canvas.html">
+			<input type="submit" value="Next"/>
+		</form>
+
+		<script lang="Javascript">
+
+			let today = new Date()
+			document.getElementById('time_field').value = today.getHours() + ':' + today.getMinutes();
+
+			function download() {
+				var filename = 'test.txt';
+				var name =  window.document.form.name.value;
+				var age =  window.document.form.age.value;
+				var nationality =  window.document.form.nationality.value;
+				var screen_size = window.document.form.screen_size.value;
+				var res_height = window.document.form.res_height.value;
+				var res_width = window.document.form.res_width.value;
+				var distance = window.document.form.distance.value;
+				var date = window.document.form.date.value;
+				var time = window.document.form.time_field.value;
+				
+				var pom = document.createElement('a');
+				pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+					'Name: ' + encodeURIComponent(name + '\r\n') +
+					'Age: ' + encodeURIComponent(age + '\r\n') +
+					'Country of Origin: ' + encodeURIComponent(nationality + '\r\n') +
+					'Screen Size: ' + encodeURIComponent(screen_size + 'in \r\n') + 
+					'Screen Resolution: ' + encodeURIComponent(res_width + 'x' + res_height + '\r\n') + 
+					'Screen Distance: ' + encodeURIComponent(distance + 'mm \r\n') + 
+					'Date: ' + encodeURIComponent(date + '\r\n') + 
+					'Time: ' + encodeURIComponent(time)); 
+			
+				pom.setAttribute('download', filename);
+			
+				pom.style.display = 'none';
+				document.body.appendChild(pom);
+			
+				pom.click();
+			
+				document.body.removeChild(pom);
+			}
+		</script>
+	</body>
+</html>

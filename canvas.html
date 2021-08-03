@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+		<title>GazePal Data Collection</title>
+	</head>
+	<body>
+		<div id="buttons">
+			<button id='start-btn' onclick='start_btn()'>Start Recording</button>
+			<button id='download-btn' onclick='download_video()' style="display: none;">Download Video</button>
+		</div>
+
+		<div id="canvas-div" class='Canvas'>
+			<canvas id='myCanvas' style='border: 2px solid red;'></canvas>
+			<div class='marker'></div>
+		</div>
+
+		
+		<script src='marker.js'></script>
+		
+	</body>
+</html>
