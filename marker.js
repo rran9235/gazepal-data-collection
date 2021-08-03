@@ -14,10 +14,10 @@ const region_height = ctx.canvas.clientHeight/3;
 // Vertical movement
 const dy = region_height/6;
 // 
-const vertical_time = 100;
-const horizontal_time = 200;
-const new_row_time = 500;
-const pause_time = 100;
+const vertical_time = 1000;
+const horizontal_time = 2000;
+const new_row_time = 5000;
+const pause_time = 1000;
 
 const videoMediaConstraints = {audio: false,video: true,};
 
