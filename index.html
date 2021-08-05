@@ -7,34 +7,35 @@
 		content="IE=edge">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="https://rran9235.github.io/gazepal-data-collection/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>GazePal Data Collection</title>
 </head>
 
 <body>
-	<div id="intro">
-		<div class="title">
-			<h1> GazePal Data Collection </h1>
-		</div>
-		<p>Hi, Rishi Rangarajan here. For my thesis, I am developing a gaze tracking system to control devices with just your eyes! I require your help to collect additional data to improve my machine learning algorithm. Crowd-sourcing gaze data collection will help collect data for a wide variety of eye shapes, colours, etc. to help my algorithm generalise better. Kindly request you to spare about 10 minutes to assist me by following the instructions below. The application will collect some basic user information from you and record your eye movements as you follow a marker that moves around the screen.</p>
-		
-		<h2> Instructions: </h2>
-		<ol>
-			<li>Kindly perform data collection in full-screen (F11 on Windows). The used screen area adjusts automatically to the size of the browser window.</li>
-			<li>Click 'Next' and fill in the user information form.</li>
-			<li>Download the form data using the 'Download' button.</li>
-			<li>Click 'Next' after saving the form data.</li>
-			<li>Click 'Start Recording' once ready to begin data collection.</li>
-			<li>Kindly grant permission to access your webcam (in-built or external) for the recording.</li>
-			<li>Focus your eyes on the red marker and follow it as it moves around the screen.</li>
-			<li>After the animation is completed, use the 'Download' button to download the recorded video file.</li>
-			<li>Kindly share the video and the text file so I can build my database.</li>
-		</ol>
-
-		<a href="HTML/form.html">
-			<button>Next</button>
-		</a>
+	<div class="title">
+		<h1> GazePal Data Collection </h1>
 	</div>
+	<div class="body">
+		<p>Hi, Rishi Rangarajan here. For my thesis, I am developing a gaze tracking system to control devices looking at various parts of a computer screen.
+		<br><br>I am requesting your help to collect additional data to help my machine learning algorithm generalise better. Crowd-sourcing gaze data will help me create a dataset with a wide variety of eye shapes, colours, head poses, screen sizes, etc.
+		<br><br>Kindly request you to spare about 10 minutes and assist me by following the instructions below. The process involves filling in a user data form and recording your eye movements as you follow a marker that moves around the screen.</p>
+		
+		<h2 class="section"> Instructions: </h2>
+		<ol>
+			<!-- <li>Watch the video to understand the process.</li> -->
+			<li>Enter full-screen on your browser (F11 on Windows).</li>
+			<li>Fill in the form and download the data as a '.txt' file .</li>
+			<li>Use the webcam preview to check if your eyes are visible in the video stream.</li>
+			<li>Click 'Start Recording' once ready to begin data collection.</li>
+			<li>Remember to grant permission for the program to access your webcam for recording.</li>
+			<li>Focus your eyes on the red marker and follow it as it moves around the screen.</li>
+			<li>After the animation is completed, use the 'Download' button to download the recorded video.</li>
+			<li>Share the downloaded '.mp4' and '.txt' files via email on rran9235@uni.sydney.edu.au</li>
+		</ol>
+		<a class="button disabled">Previous</a>
+		<a class="button" href="HTML/form.html">Next</a>
+	</div>
+	
 </body>
 
 </html>

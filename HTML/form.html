@@ -1,47 +1,55 @@
 <!DOCTYPE HTML>
 <html>
-	<title>GazePal: Data Collection</title>
-	<h1>User Information</h1>
+	<head>
+		<title>GazePal: Data Collection</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	</head>
+
 	<body>
-		<form name="form" method='post'>
+		<h1 class="title">User Information</h1>
+		<form class="body" name="form" method='post'>
 			<label for='name'>Name:</label><br>
 			<input type='text' id='name'><br>
+			<br>
 			<label for='age'>Age:</label><br>
 			<input type='text' id='age'><br>
+			<br>
 			<label for='nationality'>Country of Origin:</label><br>
 			<input type='text' id='nationality'><br>
 			<br>
-			<label for='screen_size'>Screen Size (diagonal):</label><br>
-			<input type='text' id='screen_size'> inches<br>
+			<label for='screen_size'>Diagonal Screen Size:</label><br>
+			<input type='text' id='screen_size'> in<br>
 			<br>
 			<label for='res_width'>Screen Resolution:</label><br>
-			<input type='text' id='res_width'>x<input type='text' id='res_height'>px<br>
+			<input type='text' id='res_width' value=window.innerWidth>x<input type='text' id='res_height'> px<br>
 			<br>
 			<label for='distance'>Distance from Screen:</label><br>
 			<input type='text' id='distance'> mm<br>
 			<br>
 			<label for='date'>Date:</label><br>
-			<input type='date' id='date'><br>
+			<input type='date' id='date_field'><br>
 			<br>
 			<label for='time_field'>Time (24 hr):</label><br>
-			<input type='text' id='time_field'>
-			<br>
+			<input type='text' id='time_field'><br>
 			<br>
 			<label for='submit_button' >Download form as text file: </label>
 			<input type='button' id="submit_button" value='Download' onclick="download()">
 		</form>
 		
-		<a href="canvas.html">
-			<button>Next</button>
-		</a>
+		<a class="button" href="../index.html">Previous</a>
+		<a class="button" href="canvas.html">Next</a>
 
 		<script lang="Javascript">
 
 			let today = new Date()
 			document.getElementById('time_field').value = today.getHours() + ':' + today.getMinutes();
+			document.getElementById('date_field').value = today.getDate();
+
+			document.getElementById('res_width').value = window.innerWidth;
+			document.getElementById('res_height').value = window.innerHeight;
 
 			function download() {
-				var filename = 'test.txt';
+				var filename = 'form.txt';
 				var name =  window.document.form.name.value;
 				var age =  window.document.form.age.value;
 				var nationality =  window.document.form.nationality.value;

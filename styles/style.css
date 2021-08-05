@@ -16,11 +16,40 @@
     • Turret Road (cursive)
     • Ubuntu Mono
 */
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nova+Mono&family=PT+Mono&family=Roboto+Mono&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nova+Mono&family=PT+Mono&family=Roboto+Mono&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Encode+Sans+Expanded:wght@300&family=Reggae+One&family=Turret+Road&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=JetBrains+Mono:wght@200&family=Major+Mono+Display&family=Passion+One&family=Staatliches&family=Ubuntu+Mono:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=JetBrains+Mono:wght@200&family=Major+Mono+Display&family=Passion+One&family=Staatliches&family=Ubuntu+Mono:wght@700&display=swap');
 
 .title {
-	/* font-family: 'Robot Mono'; */
-	color: 'red';
+    font-family: "PT Mono", monospace;
+    color: black;
+}
+
+.section {
+    font-family: "PT Mono", monospace;
+    color: black;
+}
+
+.body {
+    font-family: "Roboto Mono", monospace;
+	color: black;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color:darkslategray;
+    font-family: "Roboto Mono", monospace;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.disabled {
+    cursor: not-allowed;
 }

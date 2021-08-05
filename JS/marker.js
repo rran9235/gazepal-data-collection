@@ -227,10 +227,10 @@ function startRecording() {
 
 			const downloadButton = document.createElement("a");
 			
-			downloadButton.download = "Recorded-Media";
+			downloadButton.download = "GazePal-Video";
 			
 			downloadButton.href = recordedMediaURL;
-			downloadButton.innerText = "Download video";
+			downloadButton.innerText = "Download Video";
 			
 			downloadButton.onclick = () => 
 			{
@@ -239,6 +239,7 @@ function startRecording() {
 			
 			document.getElementById('buttons').append(downloadButton);
 			document.getElementById('canvas-div').style.display = 'none';
+			document.getElementById('outro').style.display = 'block';
 			
 		};
 	});
