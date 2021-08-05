@@ -187,7 +187,6 @@ function animate(time)
 
 function start_btn()
 {
-	// document.getElementById('canvas-div').style.display = 'block';
 	document.getElementById('start-btn').style.display = 'none';
 	startRecording();
 }
@@ -242,18 +241,15 @@ function startRecording() {
 			document.getElementById('canvas-div').style.display = 'none';
 			
 		};
-
-		// webCamContainer.srcObject = mediaStream;
 	});
 }
 
 function stopRecording()
 {
-	// Stop the recording
+	// Stop recording
 	window.mediaRecorder.stop();
 
-	// Stop all the tracks in the
-	// received media stream
+	// Stop all tracks in media stream
 	window.mediaStream.getTracks().forEach((track) => 
 	{
 		track.stop();
