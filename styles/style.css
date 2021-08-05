@@ -1,0 +1,26 @@
+/* Fonts List: 
+    • Audiowide
+    • Bebas Neue
+    • Comfortaa (cusrive)
+    • Encode Sans Expanded (sans-serif)
+    • Inconsolata (monospace)
+    • JetBrains Mono
+    • Major Mono Display
+    • Nova Mono (monospace)
+    • Passion One
+    • PT Mono (monospace)
+    • Reggae One (cursive)
+    • Roboto Mono (monospace)
+    • Space Mono (monospace)
+    • Staatliches
+    • Turret Road (cursive)
+    • Ubuntu Mono
+*/
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nova+Mono&family=PT+Mono&family=Roboto+Mono&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Encode+Sans+Expanded:wght@300&family=Reggae+One&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=JetBrains+Mono:wght@200&family=Major+Mono+Display&family=Passion+One&family=Staatliches&family=Ubuntu+Mono:wght@700&display=swap'); */
+
+.title {
+	/* font-family: 'Robot Mono'; */
+	color: 'red';
+}
