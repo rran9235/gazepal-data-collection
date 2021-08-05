@@ -6,21 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	</head>
 	<body>
-		<div id="buttons">
-			<button class="button" id='start-btn' onclick='start_btn()'>Start Recording</button>
-		</div>
-		<div id="outro" class="body" style="display: none;">
-			<p>Thank you for participating!
-			<br>Kindly send me the text file and videos via email: rran9235@uni.sydney.edu.au</p>
-		</div>
-
-		<div id="canvas-div" class='Canvas'>
-			<canvas id='myCanvas' style='border: 2px solid red;'></canvas>
-			<div class='marker'></div>
-		</div>
-
-		
-		<script src='../JS/marker.js'></script>
 		<script lang="Javascript">
 			function force_full_screen(element)
 			{
@@ -40,6 +25,21 @@
 
 			force_full_screen(document.documentElement);
 		</script>
+
+		<div id="buttons">
+			<button class="button" id='start-btn' onclick='start_btn()'>Start Recording</button>
+		</div>
+		<div id="outro" class="body" style="display: none;">
+			<p>Thank you for participating!
+			<br>Kindly send me the text file and videos via email: rran9235@uni.sydney.edu.au</p>
+		</div>
+
+		<div id="canvas-div" class='Canvas'>
+			<canvas id='myCanvas' style='border: 2px solid red;'></canvas>
+			<div class='marker'></div>
+		</div>
+
+		<script src='../JS/marker.js'></script>
 		
 	</body>
 </html>
